@@ -1,10 +1,10 @@
-namespace TwoSum
+namespace TwoSum.bugs
 {
-    class Solutions
+    class Solution01
     {
-        public int[] TwoSum01(int[] nums, int target)
+        public int[] TwoSum(int[] nums, int target)
         {
-            for (int i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
                 for (int j = 0; j < nums.Length; j++)
                 {
@@ -14,19 +14,13 @@ namespace TwoSum
                     }
                 }
             }
-            return null;
+            return new int[] { };
         }
-
         /*
             Accepted Runtime: 136 ms
             Your input: [2,7,11,15] = 9
             Output = [0,1]
             Expected = [0,1]
         */
-
-        public int[] TwoSum02(int[] nums, int target)
-        {
-            return null;
-        }
     }
 }
